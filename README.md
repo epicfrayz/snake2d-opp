@@ -6,6 +6,6 @@
 - http-server
 
 # Дополнительно
-- Процесс создания [тут]()
+- Процесс создания [тут](https://youtu.be/yq4x4zSSz70)
 
 > ![Screen 1](screen/welcome.png)
