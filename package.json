@@ -1,0 +1,22 @@
+{
+  "name": "snake2d",
+  "version": "1.0.0",
+  "description": "Простая игра змейка на JavaScript(без библиотек)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EpicLegend/snake2d.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/EpicLegend/snake2d/issues"
+  },
+  "homepage": "https://github.com/EpicLegend/snake2d#readme",
+  "dependencies": {
+    "http-server": "^0.12.3"
+  }
+}
