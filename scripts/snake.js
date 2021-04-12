@@ -132,32 +132,38 @@ export default class Snake {
 					break;
 			}
 		});
+
 		var swiper = new Swipe("#swipe");
+
 		swiper.onUp(async() => {
 			console.log('[Control] Swiped UP!');
 			if (this.dy == this.config.sizeCell) return;
 			this.dy = -this.config.sizeCell;
 			this.dx = 0;
 		});
+
 		swiper.onLeft(async() => {
 			console.log('[Control] Swiped LEFT!');
 			if (this.dx == this.config.sizeCell) return;
 			this.dx = -this.config.sizeCell;
 			this.dy = 0;
 		});
+		
 		swiper.onDown(async() => {
 			console.log('[Control] Swiped DOWN!');
 			if (this.dy == -this.config.sizeCell) return;
 			this.dy = this.config.sizeCell;
 			this.dx = 0;
 		});
+		
 		swiper.onRight(async() => {
 			console.log('[Control] Swiped RIGHT!');
 			if (this.dx == -this.config.sizeCell) return;
 			this.dx = this.config.sizeCell;
 			this.dy = 0;
 		});
+		
 		swiper.run();
-	}
 
+	}
 }
