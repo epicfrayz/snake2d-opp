@@ -131,7 +131,7 @@ export default class Snake {
 					break;
 			}
 		});
-		var swiper = new Swipe("#switch-zone");
+		var swiper = new Swipe("#swipe-zone");
 		swiper.onUp(async() => {
 			if (this.dy == this.config.sizeCell) return;
 			this.dy = -this.config.sizeCell;
