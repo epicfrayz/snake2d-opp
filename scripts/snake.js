@@ -17,6 +17,7 @@ export default class Snake {
 
 	}
 
+	
 	update(berry, score, canvas) {
 		this.x += this.dx;
 		this.y += this.dy;
@@ -75,7 +76,7 @@ export default class Snake {
 	}
 
 	death() {
-
+		
 		this.x = 160;
 		this.y = 160;
 		this.dx = this.config.sizeCell;
