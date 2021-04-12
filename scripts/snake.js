@@ -1,4 +1,5 @@
 import Config from "./config.js";
+import Swipe from "./swipe.js";
 
 export default class Snake {
 
@@ -130,7 +131,28 @@ export default class Snake {
 					break;
 			}
 		});
-
+		var swiper = new Swipe("#switch-zone");
+		swiper.onUp(async() => {
+			if (this.dy == this.config.sizeCell) return;
+			this.dy = -this.config.sizeCell;
+			this.dx = 0;
+		});
+		swiper.onLeft(async() => {
+			if (this.dx == this.config.sizeCell) return;
+			this.dx = -this.config.sizeCell;
+			this.dy = 0;
+		});
+		swiper.onDown(async() => {
+			if (this.dy == -this.config.sizeCell) return;
+			this.dy = this.config.sizeCell;
+			this.dx = 0;
+		});
+		swiper.onRight(async() => {
+			if (this.dx == -this.config.sizeCell) return;
+			this.dx = this.config.sizeCell;
+			this.dy = 0;
+		});
+		swiper.run();
 	}
 
 }
